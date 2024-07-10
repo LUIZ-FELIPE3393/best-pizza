@@ -141,6 +141,21 @@ a:hover:not(.nav-logo, .nav-link) {
     cursor: pointer;
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-element {
+    display: flex;
+
+    background-color: var(--color-bg-strong);
+    margin: 10px;
+    border-radius: 20px;
+
+    align-items: center;
+}
+
 .flex {
     display: flex;
     justify-content: center;

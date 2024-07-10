@@ -55,6 +55,25 @@
                         }
                     %>
                 </div>
+                <form class="form-grid">
+                    <div class="form-element">
+                        <label for="form-name">Nome: </label>
+                        <input name="form-name" class="form-input">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-address">Endereço: </label>
+                        <input name="form-address" class="form-input">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-phone">Telefone: </label>
+                        <input name="form-phone" class="form-input">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-ref">Referência: </label>
+                        <input name="form-ref" class="form-input">
+                    </div>  
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </main>
 
