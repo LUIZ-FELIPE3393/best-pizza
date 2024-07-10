@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    
+    <servlet>
+        <servlet-name>GetPizzaData</servlet-name>
+        <servlet-class>com.luizfelipe.GetPizzaDataServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>com.luizfelipe.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Order</servlet-name>
+        <servlet-class>com.luizfelipe.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>OrderPage</servlet-name>
+        <jsp-file>/pedido.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderPage</servlet-name>
+        <url-pattern>/pedido</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GetPizzaData</servlet-name>
+        <url-pattern>/gpd</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Order</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+
+</web-app>

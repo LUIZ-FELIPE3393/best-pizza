@@ -1,0 +1,187 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 02/07/2024, 20:37:09
+    Author     : Aluno
+*/
+
+@font-face {
+    font-family: "sourceSansPro-semibold";
+    src: url("./assets/SourceSansPro-Semibold.ttf");
+}
+
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+    text-decoration: none;
+}
+
+:root {
+    background-color: white;
+
+    --color-accent: #973131;
+    --color-accent-2: #A05C5C;
+    --color-bg-strong: #E0A75E;
+    --color-bg-mild: #F9D689;
+    --color-bg-light: #F5E7B2;
+
+    --font-sans-pro: "sourceSansPro-semibold";
+
+    font-family: var(--font-sans-pro);
+}
+
+header {  
+    background-color: var(--color-accent);
+    box-shadow: 0px 5px #000;
+    min-height: 64px;
+}
+
+main {
+    text-align: center;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover:not(.nav-logo, .nav-link) {
+    color: var(--color-accent-2);
+}
+
+.banner {
+    position: block;
+    background-image: url('./assets/pizza-banner.jpg');
+    height: 320px;
+
+    color: var(--color-bg-light);
+
+    align-content: center;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+.nav-link {
+    color: var(--color-bg-light);
+}
+
+.nav-logo {
+    color: var(--color-bg-light);
+}
+
+.nav-logo > b {
+    color: var(--color-bg-strong);
+}
+
+.nav-link:hover {
+    color: var(--color-bg-mild);
+}
+
+.menu-box {
+    background-color: var(--color-bg-light);
+    width: 80%;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.menu-element {
+    display: flex;
+
+    background-color: var(--color-bg-strong);
+    margin: 10px;
+    border-radius: 20px;
+
+    align-items: center;
+
+    max-height: 256px;
+}
+
+.menu-element > img {
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    width: 50%;
+    height: 100%;
+}
+
+.menu-element-text {
+    padding: 12px;
+}
+
+.menu-element-description {
+    color: rgba(0, 0, 0, .60);
+}
+
+.menu-button {
+    border-radius: 6px;
+    background: var(--color-accent);
+    border: 6px solid var(--color-accent);
+
+    color: var(--color-bg-light);   
+
+    font-family: var(--font-sans-pro);
+    font-size: 18px;
+}
+
+.menu-button:hover {
+    border-radius: 6px;
+    background: var(--color-accent-2);
+    border: 6px solid var(--color-accent-2);
+
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.ga-maamli-regular {
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-gray {
+    background-color: #808080;
+    border-color: #808080;
+}
+
+.btn-gray:hover {
+    background-color: #545E57;
+    border-color: #545E57;
+}   
+
+.tx-lg {
+    font-size: 48px;
+}
+
+.tx-md {
+    font-size: 24px;
+}
+
+.space-x-sm {
+    display: flex;
+}
+
+.space-x-sm > * {
+    margin: 10px;
+}
+
+.space-y-sm > * {
+    margin: 10px 0;
+}

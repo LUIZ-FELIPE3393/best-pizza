@@ -1,0 +1,146 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 02/07/2024, 20:37:09
+    Author     : Aluno
+*/
+
+@font-face {
+    font-family: "sourceSansPro-semibold";
+    src: url("./assets/SourceSansPro-Semibold.ttf");
+}
+
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+    text-decoration: none;
+}
+
+:root {
+    background-color: white;
+
+    --color-accent: #973131;
+    --color-accent-2: #A05C5C;
+    --color-bg-strong: #E0A75E;
+    --color-bg-mild: #F9D689;
+    --color-bg-light: #F5E7B2;
+
+    font-family: "sourceSansPro-semibold";
+}
+
+header {  
+    background-color: var(--color-accent);
+    box-shadow: 0px 5px #000;
+    min-height: 64px;
+}
+
+main {
+    text-align: center;
+}
+
+a {
+    color: var(--color-accent)
+}
+
+a:hover:not(.nav-logo, .nav-link) {
+    color: var(--color-accent-2)
+}
+
+.banner {
+    position: block;
+    background-image: url('./assets/pizza-banner.jpg');
+    height: 320px;
+
+    color: var(--color-bg-light);
+
+    align-content: center;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+.nav-link {
+    color: var(--color-bg-light);
+}
+
+.nav-logo {
+    color: var(--color-bg-light);
+}
+
+.nav-logo > b {
+    color: var(--color-bg-strong);
+}
+
+.nav-link:hover {
+    color: var(--color-bg-mild);
+}
+
+.menu-preview-box {
+    background-color: var(--color-bg-mild);
+
+    border-top: 4px solid var(--color-bg-strong);
+    border-bottom: 4px solid var(--color-bg-strong);
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.menu-element {
+    background-color: var(--color-bg-strong);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.menu-element > img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.menu-element-image {
+    height: 196px;
+    width: 256px;
+}
+
+.menu-element-text {
+    padding: 12px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.ga-maamli-regular {
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: 'sourceSansPro-semibold';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tx-lg {
+    font-size: 48px;
+}
+
+.tx-md {
+    font-size: 24px;
+}
+
+.space-x-sm {
+    display: flex;
+}
+
+.space-x-sm > * {
+    margin: 10px;
+}
